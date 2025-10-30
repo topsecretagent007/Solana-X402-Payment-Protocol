@@ -1,0 +1,39 @@
+{
+  "name": "solana-x402-payment-protocol",
+  "version": "0.2.0",
+  "description": "A secure X402 payment protocol smart contract on Solana blockchain",
+  "main": "client/payment-client.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/topsecretagent007/Solana-X402-Payment-Protocol"
+  },
+  "author": "topsecretagent007",
+  "license": "MIT",
+  "scripts": {
+    "build": "cargo build-bpf",
+    "build:release": "cargo build-bpf --release",
+    "test": "cargo test-bpf",
+    "deploy": "solana program deploy target/deploy/solana_x402_payment_protocol.so",
+    "example": "ts-node client/example.ts",
+    "compile": "tsc"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.3",
+    "borsh": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "payment",
+    "x402",
+    "smart-contract",
+    "web3",
+    "cryptocurrency"
+  ]
+}
+
